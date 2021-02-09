@@ -99,24 +99,19 @@
 
         <main class="py-4">
             @yield('content')
-            <div class="container-fluid">
+            {{-- <div class="container-fluid">
                 {{ isset($slot) ? $slot : null }}
-                {{-- @empty($link)
-                    {{$slot}}
-                @else
-                    <a href="{{$link}}">{{$link}}</a>
-                @endif --}}
-            </div>
+            </div> --}}
         </main>
 
         {{-- Livewire --}}
         @livewireScripts
             <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
-            <script type="text/javascript">
+            {{-- <script type="text/javascript">
                 window.livewire.on('userStore', () => {
                     $('#exampleModal').modal('hide');
                 });
-            </script>
+            </script> --}}
         @stack('script-custom')
     </div>
 </body>

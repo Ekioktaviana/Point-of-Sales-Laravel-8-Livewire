@@ -21,7 +21,7 @@
                                 {{-- <th>Merek ID</th> --}}
                                 {{-- <th>Purchase Price</th>
                                 <th>Date of Entry</th> --}}
-                                <th>Aksi</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>

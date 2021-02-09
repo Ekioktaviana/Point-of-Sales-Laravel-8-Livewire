@@ -1,20 +1,20 @@
-@extends('layouts.app')
+@extends('layouts.report')
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col">
             <div class="card" style="min-height: 85vh">
-                <div class="row">
-                    <div class="col-9">
-                        <div class="card-header bg-white">
+                {{-- <div class="row"> --}}
+                    <div class="col-6 mt-4">
+                        <div class="bg-white">
                             <h4 class="font-weight-bold">Report Product</h4>
                         </div>
                     </div>
-                    <div class="col-3 mt-2">
+                    {{-- <div class="col-3 mt-2">
                         <a class="btn btn-success btn-sm" style="padding: 7px 10px" href="{{ route('exportProduct') }}">Export Report Product Data</a>
-                    </div>
-                </div>
+                    </div> --}}
+                {{-- </div> --}}
                 <div class="card-body">
                     <table class="table table-sm">
                         <tr>

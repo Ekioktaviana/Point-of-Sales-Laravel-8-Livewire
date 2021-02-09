@@ -1,40 +1,40 @@
-@extends('layouts.app')
+@extends('layouts.report')
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col">
             <div class="card" style="min-height: 85vh">
-                <div class="row">
-                    <div class="col-9">
-                        <div class="card-header bg-white">
+                {{-- <div class="row"> --}}
+                    <div class="col-6 mt-4">
+                        <div class=" bg-white">
                             <h4 class="font-weight-bold">History Transcation</h4>
                         </div>
                     </div>
-                    <form action="">
-                        @csrf
-                        <div class="col-3-sm mt-2">
-                            <a class="btn btn-success btn-sm" style="padding: 7px 10px" href="{{ url('/export') }}">Export Report Transaction Data</a>
-                        </div>
-                    </form>
-                </div>
+                        {{-- <form action="">
+                            @csrf
+                            <div class="col-3-sm mt-2">
+                                <a class="btn btn-success btn-sm" style="padding: 7px 10px" href="{{ url('/export') }}">Export Report Transaction Data</a>
+                            </div>
+                        </form> --}}
+                {{-- </div> --}}
 
                 <div class="card-body">
                     <table class="table table-sm">
                         <tr>
                             <th>No</th>
-                            <th>Nomor Invoices</th>
+                            <th>Invoices Number</th>
                             <th>Admin</th>
-                            <th>Nama Produk</th>
-                            <th>Harga Produk</th>
-                            <th>Jumlah Beli</th>
-                            <th>Total Bayar</th>
-                            <th>Total Harga</th>
-                            <th>Kembalian</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Purchase Amount</th>
+                            <th>Cash</th>
+                            <th>Bill</th>
+                            <th>Change</th>
                             <th>Date Of Purchase</th>
                             {{-- <th>Aksi</th> --}}
                         </tr>
-                        @foreach ($transaction as $index=>$item)
+                        @foreach($transaction as $index=>$item)
                             <tr>
                                 <td>{{$index+1}}</td>
                                 <td>{{$item->invoice_number}}</td>

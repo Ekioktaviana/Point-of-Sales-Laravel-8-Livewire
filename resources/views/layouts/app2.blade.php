@@ -98,13 +98,13 @@
 
         <main class="py-4">
             @yield('content')
-            <div class="container-fluid">
-                {{ isset($slot) ? $slot : null }}
-            </div>
+            {{-- <div class="container-fluid">
+                {{-- {{ isset($slot) ? $slot : null }} --}}
+            </div> --}}
         </main>
         {{-- Livewire --}}
-        @livewireScripts
-            <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
+        {{-- @livewireScripts
+            <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
         @stack('script-custom')
     </div>
 </body>
